@@ -26,6 +26,10 @@ namespace WPF
             MessageBox.Show(SayHello());
         }
 
+        /// <summary>
+        /// This method always returns "Hello World".
+        /// </summary>
+        /// <returns>The string "Hello World".</returns>
         public string SayHello()
         {
             return "Hello World";
