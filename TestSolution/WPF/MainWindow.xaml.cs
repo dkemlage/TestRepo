@@ -24,6 +24,7 @@ namespace WPF
         {
             InitializeComponent();
             MessageBox.Show(SayHello());
+            MessageBox.Show(DarthVader());
         }
 
         /// <summary>
@@ -34,5 +35,15 @@ namespace WPF
         {
             return "Hello World";
         }
+
+        /// <summary>
+        /// This method always returns "Luke, I am your father!".
+        /// </summary>
+        /// <returns>The string "Luke, I am your father!".</returns>
+        public string DarthVader()
+        {
+            return "Luke, I am your father!";
+        }
+
     }
 }
