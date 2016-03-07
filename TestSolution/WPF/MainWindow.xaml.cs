@@ -23,8 +23,9 @@ namespace WPF
         public MainWindow()
         {
             InitializeComponent();
-            MessageBox.Show(SayHello());
-            MessageBox.Show(DarthVader());
+
+            comboBox.Items.Add("Luke");
+            comboBox.Items.Add("Darth Vader");
         }
 
         /// <summary>
@@ -45,5 +46,19 @@ namespace WPF
             return "Luke, I am your father!";
         }
 
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+
+          var selected = this.comboBox.SelectedItem;
+
+            if (selected.ToString() == "Luke")
+            {
+                MessageBox.Show(SayHello());
+            }
+            if (selected.ToString() == "Darth Vader")
+            {
+                MessageBox.Show(DarthVader());
+            }
+        }
     }
 }
